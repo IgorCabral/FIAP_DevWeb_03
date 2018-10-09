@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+      </head>
+<body>
+  <script type="text/javascript">
+      $(document).on("ready", function(){
+        console.log("f");
+        $.get("https://localhost:5001/api/perguntas/", function (data, status) {
+            console.log("Data: " + data);
+        });
+      })
+  </script>
+</body>
+</html>
